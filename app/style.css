@@ -343,11 +343,23 @@ template {
 [hidden] {
   display: none !important;
 }
+body {
+  font-family: "BasisGrotesquePro";
+  font-size: 14px;
+}
+
 .containerIS {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .containerIS {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .hamburgerBtn {
@@ -394,6 +406,48 @@ template {
   width: 100%;
 }
 
+.btnLink {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  display: inline-block;
+  font-family: "BasisGrotesquePro-Bold";
+  padding: 8px 30px;
+  background-color: #FFC533;
+}
+
+.btnLink:hover, .btnLink:active, .btnLink:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btnLink_color_yellow {
+  background-color: #FFC533;
+}
+
+.btnLink_color_yellow:hover, .btnLink_color_yellow:active, .btnLink_color_yellow:focus {
+  background-color: #FFB600;
+}
+
+.btnLink_size_s {
+  font-size: 14px;
+  line-height: 19px;
+  padding: 6px 30px;
+}
+
+.btnLink_size_m {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 8px 30px;
+}
+
+.btnLink_size_l {
+  font-size: 22px;
+  line-height: 29px;
+  padding: 10px 30px;
+}
+
 .mainNavigation-mobile {
   background-color: rgba(38, 43, 52, 0.8);
   position: fixed;
@@ -434,15 +488,89 @@ template {
 
 .mainNavigation-pc {
   display: none;
+  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .mainNavigation-mobile {
+    display: none;
+  }
+  .mainNavigation-pc {
+    display: block;
+  }
 }
 
 .heroHome {
   height: 100vh;
-  max-height: 590px;
-  background-image: url("images/heroHome-Bg-mobile.png");
+  background-image: url("images/hero-section/heroHome-Bg-mobile.png");
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: top right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.heroHome__title {
+  color: #ffffff;
+  font-family: "BasisGrotesquePro-Bold";
+  font-size: 38px;
+  letter-spacing: -0.2px;
+  line-height: 41px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.heroHome__subtitle {
+  color: #ffffff;
+  font-family: "BasisGrotesquePro";
+  font-size: 19px;
+  letter-spacing: -0.2px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .heroHome {
+    background-image: url("images/hero-section/heroHome-Bg-pc.png");
+    background-position: top center;
+  }
+}
+
+@media (min-width: 992px) {
+  .heroHome__title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .heroHome__subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+  .heroHome__title, .heroHome__subtitle, .heroHome__btnContainer {
+    width: 50%;
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heroHome {
+    background-image: url("images/hero-section/heroHome-Bg-pc@2x.png");
+  }
 }
 
 /*==========  Mobile First  ==========*/

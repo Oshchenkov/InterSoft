@@ -3,13 +3,26 @@
 @import "fonts"    
 @import "reboot"
 
+body
+    font-family: $BGPro-font
+    font-size: 14px
 .containerIS
     padding-left: 20px
     padding-right: 20px
     margin-left: auto
     margin-right: auto
+@media (min-width: 992px)
+    .containerIS
+        padding-left: 60px
+        padding-right: 60px
 
 
+// page.components
+@import "page.components/hamburgerBtn/_hamburgerBtn"
+@import "page.components/mainLogo/_mainLogo"
+@import "page.components/btnLink/_btnLink"
+
+// page.blocks
 @import "page.blocks/mainHeader/_mainHeader"
 @import "page.blocks/mainContainer/_mainContainer"
 

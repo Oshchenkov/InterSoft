@@ -1,7 +1,52 @@
 
 .heroHome
     height: 100vh
-    max-height: 590px
-    background-image: url("images/heroHome-Bg-mobile.png")
+    background-image: url("images/hero-section/heroHome-Bg-mobile.png")
     background-repeat: no-repeat
-    object-fit: cover
+    background-size: cover
+    background-position: top right
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    &__title
+        color: $white-color
+        font-family: $BGPro-Bold-font
+        font-size: 38px
+        letter-spacing: -0.2px
+        line-height: 41px
+        margin-bottom: 30px
+        margin-top: 60px
+    &__subtitle
+        color: $white-color
+        font-family: $BGPro-font
+        font-size: 19px
+        letter-spacing: -0.2px
+        line-height: 25px
+        margin-bottom: 30px
+    &__btnContainer
+
+// Media
+
+// @media (min-width: 576px)
+@media (min-width: 768px)
+    .heroHome
+        background-image: url("images/hero-section/heroHome-Bg-pc.png")
+        background-position: top center
+@media (min-width: 992px)
+    .heroHome
+        &__title
+            font-size: 48px
+            line-height: 52px
+        &__subtitle
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 60px
+        &__title,
+        &__subtitle,
+        &__btnContainer
+            width: 50%
+            padding-left: 10%
+@media (min-width: 1200px)
+    .heroHome
+        background-image: url("images/hero-section/heroHome-Bg-pc@2x.png")
