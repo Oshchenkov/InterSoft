@@ -1,0 +1,22 @@
+
+.hamburgerBtn
+    display: flex
+    width: 30px
+    height: 24px
+    flex-flow: column
+    flex-wrap: nowrap
+    justify-content: space-between
+    &__spanLine
+        background-color: #FFB600
+        width: 100%
+        height: 4px
+
+
+.hamburgerBtn.hamburgerBtn_light
+    .hamburgerBtn__spanLine
+        border-right: 4px solid $greyDark-color
+        border-left: 4px solid $greyDark-color
+.hamburgerBtn.hamburgerBtn_dark
+    .hamburgerBtn__spanLine
+        border-right: 4px solid $blackLight-color
+        border-left: 4px solid $blackLight-color
