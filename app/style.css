@@ -1,41 +1,16 @@
 @font-face {
-  font-family: "roboto-example";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "roboto-example";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "BasisGrotesquePro";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular.eot");
-  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular.woff") format("woff"), url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular.ttf") format("truetype");
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "BasisGrotesquePro";
-  font-weight: light;
-  font-style: normal;
-  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Light.eot");
-  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Light.woff") format("woff"), url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Light.ttf") format("truetype");
+  font-family: "BasisGrotesquePro-Light";
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "BasisGrotesquePro";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Bold.eot");
-  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Bold.woff") format("woff"), url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Bold.ttf") format("truetype");
+  font-family: "BasisGrotesquePro-Bold";
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Bold.ttf") format("truetype");
 }
 
 /*!

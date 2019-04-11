@@ -1,8 +1,15 @@
 @import "_mixins/font-face"
 
-+font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular")
-+font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold)
+// +font-face("BasisGrotesquePro", "../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular")
+// +font-face("BasisGrotesquePro", "../fonts/BasisGrotesquePro/BasisGrotesquePro-Light", lighter)
+// +font-face("BasisGrotesquePro", "../fonts/BasisGrotesquePro/BasisGrotesquePro-Bold", bold)
 
-+font-face("BasisGrotesquePro", "../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular")
-+font-face("BasisGrotesquePro", "../fonts/BasisGrotesquePro/BasisGrotesquePro-Light", light)
-+font-face("BasisGrotesquePro", "../fonts/BasisGrotesquePro/BasisGrotesquePro-Bold", bold)
+@font-face 
+  font-family: "BasisGrotesquePro"
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular.ttf") format("truetype")
+@font-face 
+  font-family: "BasisGrotesquePro-Light"
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Light.ttf") format("truetype")
+@font-face 
+  font-family: "BasisGrotesquePro-Bold"
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Bold.ttf") format("truetype")
