@@ -343,6 +343,13 @@ template {
 [hidden] {
   display: none !important;
 }
+.containerIS {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hamburgerBtn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -362,6 +369,7 @@ template {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 .hamburgerBtn__spanLine {
@@ -378,6 +386,63 @@ template {
 .hamburgerBtn.hamburgerBtn_dark .hamburgerBtn__spanLine {
   border-right: 4px solid #262B34;
   border-left: 4px solid #262B34;
+}
+
+.mainLogo__img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.mainNavigation-mobile {
+  background-color: rgba(38, 43, 52, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.topNav-mobile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topNav-mobile__logo {
+  width: 160px;
+}
+
+.mainNavigation-mobile__menuContainer {
+  display: none;
+}
+
+.mainNavigation-pc {
+  display: none;
+}
+
+.heroHome {
+  height: 100vh;
+  max-height: 590px;
+  background-image: url("images/heroHome-Bg-mobile.png");
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*==========  Mobile First  ==========*/
