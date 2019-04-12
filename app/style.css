@@ -1,3 +1,5 @@
+/*==========  Mobile First  ==========*/
+/*==========  Desktop First  ==========*/
 @font-face {
   font-family: "BasisGrotesquePro";
   src: url("../fonts/BasisGrotesquePro/BasisGrotesquePro-Regular.ttf") format("truetype");
@@ -575,3 +577,8 @@ body {
 
 /*==========  Mobile First  ==========*/
 /*==========  Desktop First  ==========*/
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 10px;
+  }
+}

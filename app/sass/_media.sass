@@ -1,20 +1,22 @@
 
 /*==========  Mobile First  ==========*/
 
-// // Small devices (landscape phones, 576px and up)
+// sm (landscape phones, 576px and up)
 // @media (min-width: 576px) 
+// +media-breakpoint-up($sm)
 
-// // Medium devices (tablets, 768px and up)
+// md Medium devices (tablets, 768px and up)
 // @media (min-width: 768px)
 
-// // Large devices (desktops, 992px and up)
+// lg Large devices (desktops, 992px and up)
 // @media (min-width: 992px)
 
-// // Extra large devices (large desktops, 1200px and up)
+// xl (large desktops, 1200px and up)
 // @media (min-width: 1200px)
 
 /*==========  Desktop First  ==========*/
 // @media (max-width: 575.98px) { ... }
+// +media-breakpoint-down($sm)
 
 // // Small devices (landscape phones, less than 768px)
 // @media (max-width: 767.98px) { ... }
@@ -24,3 +26,7 @@
 
 // // Large devices (desktops, less than 1200px)
 // @media (max-width: 1199.98px) { ... }
+
++media-breakpoint-down($sm)
+    body
+        padding-top: 10px
