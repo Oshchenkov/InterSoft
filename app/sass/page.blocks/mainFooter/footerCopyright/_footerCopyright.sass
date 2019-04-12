@@ -1,0 +1,39 @@
+.footerCopyright
+    display: flex
+    flex-direction: column
+    padding-top: 30px
+    padding-bottom: 30px
+    &__year,
+    &__policy,
+    &__terms,
+    &__accessibility
+        color: $greyDark-color
+        font-family: $BGPro-font
+        font-size: 12px
+        line-height: 20px
+
+.footerCopyright__policy:hover,
+.footerCopyright__policy:active,
+.footerCopyright__policy:focus,
+.footerCopyright__terms:hover,
+.footerCopyright__terms:active,
+.footerCopyright__terms:focus,
+.footerCopyright__accessibility:hover,
+.footerCopyright__accessibility:active,
+.footerCopyright__accessibility:focus
+    color: $greyDark-color
+
++media-breakpoint-up($lg)
+    .footerCopyright
+        flex-direction: row
+        justify-content: center
+        &__year,
+        &__policy,
+        &__terms,
+        &__accessibility
+            padding-right: 8px
+            padding-left: 8px
+            border-right: 1px solid $greyDark-color
+            line-height: initial
+    .footerCopyright__accessibility
+        border-right: none

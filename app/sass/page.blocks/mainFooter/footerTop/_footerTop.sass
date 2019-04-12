@@ -1,0 +1,29 @@
+.footerTop
+    text-align: center
+    padding-top: 30px
+    &__text
+        color: $white-color
+        padding-bottom: 30px
+        font-family: $BGPro-Bold-font
+        font-size: 20px
+        line-height: 26px
+    &__btn
+        padding-bottom: 30px
+
++media-breakpoint-up($lg)
+    .footerTop
+        display: flex
+        justify-content: center
+        padding-top: 40px
+        padding-bottom: 40px
+        align-items: center
+        &__text
+            color: $white-color
+            padding-bottom: 0
+            font-family: $BGPro-Bold-font
+            font-size: 24px
+            line-height: 28px
+            letter-spacing: -0.2px
+            margin-right: 40px
+        &__btn
+            padding-bottom: 0
