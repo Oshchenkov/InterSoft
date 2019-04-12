@@ -1,12 +1,8 @@
 @import "mainNavigation-mobile/_mainNavigation-mobile"
-
-
-
-
 @import "mainNavigation-pc/_mainNavigation-pc"
 
-@media (min-width: 992px)
++media-breakpoint-up($lg) 
     .mainNavigation-mobile
         display: none
     .mainNavigation-pc
-        display: block
+        display: flex

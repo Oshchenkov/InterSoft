@@ -7,14 +7,14 @@ body
     font-family: $BGPro-font
     font-size: 14px
 .containerIS
-    padding-left: 20px
-    padding-right: 20px
+    padding-left: $container-gap-mobile
+    padding-right: $container-gap-mobile
     margin-left: auto
     margin-right: auto
-@media (min-width: 992px)
++media-breakpoint-up($lg) 
     .containerIS
-        padding-left: 60px
-        padding-right: 60px
+        padding-left: $container-gap-pc
+        padding-right: $container-gap-pc
 
 
 // page.components

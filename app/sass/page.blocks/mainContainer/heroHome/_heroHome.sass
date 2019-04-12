@@ -9,6 +9,7 @@
     flex-direction: column
     justify-content: center
     text-align: center
+    position: relative
     &__title
         color: $white-color
         font-family: $BGPro-Bold-font
@@ -25,16 +26,41 @@
         line-height: 25px
         margin-bottom: 30px
     &__btnContainer
+    &__scroll
+        display: none
+        position: absolute
+        bottom: 25px
+        left: 0
+        right: 0
+
+.scrollDown
+    cursor: pointer
+    display: inline-block
+    &__text
+        color: $greyDark-color
+        text-transform: uppercase
+        font-family: $BGPro-Bold-font
+        font-size: 14px
+        line-height: 19px
+        text-align: center
+        margin-bottom: 5px
+    &__icon
+        display: inline-block
+        width: 25px
+        height: auto
+
+
 
 // Media
 
 
-@media (min-width: 768px)
++media-breakpoint-up($md) 
     .heroHome
         background-image: url("images/hero-section/heroHome-Bg-pc.png")
         background-position: top center
-@media (min-width: 992px)
++media-breakpoint-up($lg) 
     .heroHome
+        margin-top: -100px
         &__title
             font-size: 48px
             line-height: 52px
@@ -47,6 +73,9 @@
         &__btnContainer
             width: 50%
             padding-left: 10%
-@media (min-width: 1200px)
+        &__scroll
+            display: inline-block
++media-breakpoint-up($xl)
     .heroHome
         background-image: url("images/hero-section/heroHome-Bg-pc@2x.png")
+        background-position: center

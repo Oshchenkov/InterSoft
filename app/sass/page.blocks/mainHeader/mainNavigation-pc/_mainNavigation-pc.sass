@@ -4,8 +4,49 @@
     background-color: transparent
     padding-top: 30px
     padding-bottom: 30px
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: center
+    justify-content: space-between
+    z-index: 200
+    position: relative
+    &:after
+        display: block
+        position: absolute
+        bottom: 0
+        left: $container-gap-pc
+        right: $container-gap-pc
+        content: ""
+        height: 1px
+        background-color: $white-color
     &__logoContainer
+        max-width: 170px
+    &__menuContainer
+        display: flex
+    &__ul
+        list-style: none
+        padding-left: 0
+        margin-bottom: 0
+        display: flex
+        align-items: center
+        margin-right: 25px
+    &__li
+        display: flex
+    &__a
+        display: block
+        color: $white-color
+        font-family: $BGPro-font
+        font-size: 16px
+        padding: 8px 25px
+        &:hover
+           color: $white-color 
+    &__btnContainer
+        display: none
 
-.topNav-pc
-    &__logo
-    &__menu
+
++media-breakpoint-up($xl)
+    .mainNavigation-pc__btnContainer
+        display: block
+
+
+
