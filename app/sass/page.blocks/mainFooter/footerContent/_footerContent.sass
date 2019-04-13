@@ -1,0 +1,82 @@
+.footerContent
+    display: flex
+    flex-direction: column
+    margin-top: 40px
+    margin-bottom: 40px
+    &__siteInfo
+    .footerSiteInfo
+        &__logo
+            width: 160px
+            margin-bottom: 30px
+        &__description
+            font-family: $BGPro-font
+            font-size: 20px
+            line-height: 26px
+            letter-spacing: -0.2px
+            color: $greyDark-color
+            padding-bottom: 40px
+    &__menuContainer
+        &-col
+
+.footerNav
+    &__title
+        font-family: $BGPro-Bold-font
+        color: $white-color
+        font-size: 17px
+        line-height: 23px
+        margin-bottom: 15px
+    &__ul
+        list-style: none
+        padding-left: 0
+        margin-bottom: 30px
+    &__li
+    &__a
+        font-family: $BGPro-font
+        color: $greyDark-color
+        font-size: 16px
+        line-height: 22px
+        &:hover,
+        &:active,
+        &:focus
+            color: $greyDark-color
+.footerDetails
+    &__title
+        @extend .footerNav__title
+    &__ul
+        @extend .footerNav__ul
+    &__li
+        @extend .footerNav__a
+
+// Media for lg
+
++media-breakpoint-up($lg)
+    .footerContent
+        flex-direction: row
+        justify-content: space-between
+        margin-top: 70px
+        margin-bottom: 70px
+        &__siteInfo
+            width: 30%
+        .footerSiteInfo
+            padding-top: 0
+            padding-bottom: 40px
+            &__logo
+                width: 170px
+            &__description
+                line-height: 28px
+        &__menuContainer
+            width: 65%
+            display: flex
+            justify-content: space-between
+            &-col
+                margin-left: 20px
+
+.footerNav
+    &__title
+        margin-bottom: 20px
+    &__ul
+        margin-bottom: 0
+
+.footerDetails
+    .footerDetails__ul-info
+        margin-bottom: 30px
