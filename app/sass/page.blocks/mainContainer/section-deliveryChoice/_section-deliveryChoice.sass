@@ -1,0 +1,62 @@
+.section-deliveryChoice
+    background-color: $greyLight-color
+    padding-top: 60px
+    padding-bottom: 60px
+    &__textBlock
+        padding-bottom: 30px
+        display: flex
+        flex-direction: column
+    &__iconsBlock
+        padding-bottom: 15px
+    &__btnBlock
+        .btnLink
+            width: 100%
+
+.iconsBlock
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &__container
+        text-align: center
+        background-color: $white-color
+        margin-bottom: 15px
+        padding: 15px 20px
+
+    &__icon
+        margin-bottom: 10px
+        img
+            display: inline-block
+            width: 48px
+            height: auto
+
+    &__iconTitle
+        font-family: $BGPro-font
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 5px
+    &__iconDesc
+
++media-breakpoint-up($lg)
+    .section-deliveryChoice
+        padding-top: 100px
+        padding-bottom: 100px
+        &__textBlock
+        &__iconsBlock
+        &__btnBlock
+            text-align: center
+            .btnLink
+                width: initial
+
+    .iconsBlock
+        flex-direction: row
+        &__container
+            width: 300px
+            margin-right: 30px
+            margin-bottom: 60px
+            &:last-child
+                margin-right: 0
+        &__icon
+            img
+        &__iconTitle
+        &__iconDesc
+            display: none

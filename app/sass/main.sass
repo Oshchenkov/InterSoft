@@ -11,10 +11,15 @@ body
     padding-right: $container-gap-mobile
     margin-left: auto
     margin-right: auto
+
+
 +media-breakpoint-up($lg) 
     .containerIS
         padding-left: $container-gap-pc
         padding-right: $container-gap-pc
+    .containerIS-inner
+        padding-left: 12%
+        padding-right: 12%
 
 
 // page.components
@@ -22,6 +27,8 @@ body
 @import "page.components/mainLogo/_mainLogo"
 @import "page.components/btnLink/_btnLink"
 @import "page.components/separator/_separator"
+@import "page.components/sectionTextBlock/_sectionTextBlock"
+
 
 // page.blocks
 @import "page.blocks/mainHeader/_mainHeader"

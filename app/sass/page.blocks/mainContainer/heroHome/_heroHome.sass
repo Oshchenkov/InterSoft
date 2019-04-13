@@ -12,7 +12,7 @@
     position: relative
     &__title
         color: $white-color
-        font-family: $BGPro-Bold-font
+        font-family: $BGPro-font
         font-size: 38px
         letter-spacing: -0.2px
         line-height: 41px
@@ -72,10 +72,14 @@
         &__subtitle,
         &__btnContainer
             width: 50%
-            padding-left: 10%
+            padding-left: 15%
         &__scroll
             display: inline-block
 +media-breakpoint-up($xl)
     .heroHome
         background-image: url("images/hero-section/heroHome-Bg-pc@2x.png")
         background-position: center
+        &__title,
+        &__subtitle,
+        &__btnContainer
+            padding-left: 20%

@@ -1,0 +1,25 @@
+.sectionTextBlock
+    color: $blackLight-color
+    text-align: center
+    &__title
+        font-family: $BGPro-font
+        font-size: 32px
+        line-height: 38px
+        font-weight: 400
+        letter-spacing: -0.2px
+        margin-bottom: 40px
+    &__text
+        font-family: $BGPro-font
+        margin-bottom: 30px
+        font-size: 18px
+        line-height: 28px
+
+.sectionTextBlock.sectionTextBlock_color_white
+    color: $white-color
+
++media-breakpoint-up($lg)
+    .sectionTextBlock
+        &__title
+            line-height: 42px
+        &__text
+            line-height: 30px
