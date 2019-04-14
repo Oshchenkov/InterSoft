@@ -1,0 +1,56 @@
+.deliveryChannel-mob
+    &__blockContainer
+        margin-bottom: 8px
+        &-head
+            background-color: $greyLight2-color
+            height: 48px
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            cursor: pointer
+            &:hover
+                background-color: $greyDark-color
+            &-title
+                font-family: $BGPro-font
+                color: $white-color
+                text-transform: uppercase
+                text-align: center
+                font-size: 24px
+            &-arrowIcon
+                height: 32px
+                width: 32px
+                background-image: url("images/icons/arrowDownDark.png")
+                background-size: contain
+                position: absolute
+                right: 8px
+                top: 8px
+                bottom: 8px
+
+        &-content
+            margin-bottom: 20px
+            display: none
+            &-img
+                margin-bottom: 20px
+                & img
+                    display: block
+                    width: 100%
+                    height: auto
+            &-text
+                margin-bottom: 20px
+                color: $greyDark-color
+                font-family: $BGPro-font
+                font-size: 18px
+                line-height: 28px
+            &-btn
+
+
+
+.deliveryChannel-mob__blockContainer.openDC .deliveryChannel-mob__blockContainer-content
+    display: block
+
+
+.openDC .deliveryChannel-mob__blockContainer-head
+    background-color: $yellowLight-color
+    &:hover
+        background-color: $yellow-color
