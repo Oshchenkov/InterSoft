@@ -418,7 +418,7 @@ body {
   line-height: 24px;
   text-align: center;
   display: inline-block;
-  font-family: "BasisGrotesquePro";
+  font-family: "BasisGrotesquePro-Bold";
   padding: 8px 30px;
   background-color: #FFC533;
 }
@@ -442,6 +442,14 @@ body {
 
 .btnLink_color_greyLight2:hover, .btnLink_color_greyLight2:active, .btnLink_color_greyLight2:focus {
   background-color: #A4B6C8;
+}
+
+.btnLink_color_greyDark2 {
+  background-color: #51555D;
+}
+
+.btnLink_color_greyDark2:hover, .btnLink_color_greyDark2:active, .btnLink_color_greyDark2:focus {
+  background-color: #262B34;
 }
 
 .btnLink_size_s {
@@ -847,7 +855,7 @@ body {
     background-position: center;
   }
   .heroHome__title, .heroHome__subtitle, .heroHome__btnContainer {
-    padding-left: 20%;
+    padding-left: 17%;
   }
 }
 
@@ -1461,8 +1469,32 @@ body {
   border-left: 0px solid transparent;
 }
 
+.dChallenge-pc-contentBlock.dChallenge-pc-contentBlock_colorTheme_dark .dChallengeItem__mainContent {
+  background-color: #A4B6C8;
+}
+
+.dChallenge-pc-contentBlock.dChallenge-pc-contentBlock_colorTheme_dark .dChallengeItem.dChallengeItem_position_left .dChallengeItem__numberBlock:before {
+  border-left: 34px solid #A4B6C8;
+}
+
+.dChallenge-pc-contentBlock.dChallenge-pc-contentBlock_colorTheme_dark .dChallengeItem.dChallengeItem_position_right .dChallengeItem__numberBlock:before {
+  border-right: 34px solid #A4B6C8;
+}
+
+.dChallenge-pc-contentBlock.dChallenge-pc-contentBlock_colorTheme_dark .btnNumber.active {
+  background-color: #A4B6C8;
+}
+
+.dChallenge-pc-contentBlock.dChallenge-pc-contentBlock_colorTheme_dark .btnNumber.active .btnNumber__span {
+  color: #A4B6C8;
+}
+
 .section-deliveryChallenge {
   background-color: #262B34;
+}
+
+.section-deliveryChallenge-pc {
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -1537,6 +1569,196 @@ body {
   .ISstoryBlock__desc {
     font-size: 20px;
     line-height: 32px;
+  }
+}
+
+.section-harrodsDelivering {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.section-harrodsDelivering__title {
+  margin-bottom: 30px;
+}
+
+.section-harrodsDelivering__title-h3 {
+  font-family: "BasisGrotesquePro";
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.2px;
+}
+
+.section-harrodsDelivering__slider {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-harrodsDelivering__btn {
+  text-align: center;
+}
+
+.section-harrodsDelivering__btn .btnLink {
+  width: 100%;
+}
+
+.harrodsDelivering-carousel__slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.harrodsDelivering-carousel__logo {
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.harrodsDelivering-carousel__logo-img {
+  max-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.harrodsDelivering-carousel__content {
+  padding: 24px 24px 40px 24px;
+  background-color: #CED7E0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "BasisGrotesquePro";
+  color: #262B34;
+}
+
+.harrodsDelivering-carousel__content-logo {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.harrodsDelivering-carousel__content-title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+  letter-spacing: -0.2px;
+}
+
+.harrodsDelivering-carousel__content-desc {
+  display: none;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.section-harrodsDelivering__slider .owl-dots {
+  display: none;
+}
+
+.carouselNav {
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+}
+
+.carouselNav-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  background-image: url("images/icons/arrowDownDark.png");
+  -webkit-background-size: contain;
+          background-size: contain;
+  border: none;
+}
+
+.carouselNav-btn:focus, .carouselNav-btn:hover, .carouselNav-btnactive {
+  outline: none;
+}
+
+.carouselNav-btn span {
+  display: none;
+}
+
+.carouselNav-btnPrev {
+  margin-right: 2px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.carouselNav-btnNext {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@media (min-width: 992px) {
+  .section-harrodsDelivering {
+    padding-top: 100px;
+  }
+  .section-harrodsDelivering__title {
+    margin-bottom: 50px;
+  }
+  .section-harrodsDelivering__title-h3 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .section-harrodsDelivering__slider {
+    margin-bottom: 40px;
+  }
+  .section-harrodsDelivering__btn .btnLink {
+    width: initial;
+  }
+  .harrodsDelivering-carousel__slide {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .harrodsDelivering-carousel__logo {
+    overflow: hidden;
+    max-height: 700px;
+    width: 50%;
+  }
+  .harrodsDelivering-carousel__content {
+    width: 50%;
+    padding: 8% 5% 10% 5%;
+  }
+  .harrodsDelivering-carousel__content-logo {
+    margin-bottom: 50px;
+  }
+  .harrodsDelivering-carousel__content-title {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  .harrodsDelivering-carousel__content-desc {
+    display: block;
+    margin-bottom: 60px;
+  }
+  .carouselNav {
+    position: absolute;
+    bottom: -6px;
+    right: -webkit-calc(50% - 70px*3);
+    right: calc(50% - 70px*3);
+  }
+  .carouselNav-btn {
+    width: 70px;
+    height: 70px;
+  }
+  .carouselNav-btnPrev {
+    margin-right: 4px;
   }
 }
 

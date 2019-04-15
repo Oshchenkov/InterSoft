@@ -10,6 +10,14 @@ $(document).ready(function(){
 		}, 2000);
 	});
 
+	// deliveryChannelMob accordion
+
+
+	$("#deliveryChannelMob .deliveryChannel-mob__blockContainer-head").click(function(){
+		$(this).parent(".deliveryChannel-mob__blockContainer").toggleClass("openDC");
+		$("#deliveryChannelMob .deliveryChannel-mob__blockContainer-head").not(this).parent(".deliveryChannel-mob__blockContainer").removeClass("openDC");
+	});
+
 	// deliveryChallenge-mob-slider functionality
 	
 	var deliveryChallenge_mob_slider = $("#deliveryChallenge-mob-slider");
@@ -19,7 +27,7 @@ $(document).ready(function(){
 		dotsEach: true,
 		dotsClass: "navDots",
 		dotClass: "navDots__dot",
-	})
+	});
 
 	$('.owlNav-dot').on('click', 'li', function(e) {
 		deliveryChallenge_mob_slider.trigger('to.owl.carousel', [$(this).index(), 300]);
@@ -41,7 +49,16 @@ $(document).ready(function(){
 		});
 	})
 
-	// 
+	// harrodsDelivering-carousel
+
+	var harrodsDeliveringCarousel = $("#harrodsDeliveringCarousel");
+	harrodsDeliveringCarousel.owlCarousel({
+		items: 1,
+		loop: true,
+		nav: true,
+		navContainerClass: "carouselNav",
+		navClass: ["carouselNav-btnPrev carouselNav-btn","carouselNav-btnNext carouselNav-btn"],
+	})
 
 });
 

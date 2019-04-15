@@ -1,0 +1,125 @@
+.section-harrodsDelivering
+    background-color: $white-color
+    padding-top: 40px
+    padding-bottom: 50px
+    &__title
+        margin-bottom: 30px
+        &-h3
+         font-family: $BGPro-font
+         font-size: 24px
+         line-height: 32px
+         text-align: center
+         letter-spacing: -0.2px   
+    &__slider
+        margin-bottom: 20px
+        position: relative
+    &__btn
+        text-align: center
+        .btnLink
+            width: 100%
+
+.harrodsDelivering-carousel
+    &__slide
+        display: flex
+        flex-direction: column
+    &__logo
+        overflow: hidden
+        max-height: 400px
+        &-img
+            max-width: 100%
+            height: 100%
+            background-repeat: no-repeat
+    &__content
+        padding: 24px 24px 40px 24px
+        background-color: $grey-color
+        display: flex
+        flex-direction: column
+        font-family: $BGPro-font
+        color: $blackLight-color
+        &-logo
+            max-width: 160px
+            height: auto
+            margin-bottom: 25px
+        &-title
+            margin-bottom: 30px
+            font-size: 36px
+            font-weight: bold
+            line-height: 42px
+            letter-spacing: -0.2px
+        &-desc
+            display: none
+            font-size: 18px
+            line-height: 30px
+
+.section-harrodsDelivering__slider .owl-dots
+    display: none
+.carouselNav
+    position: absolute
+    bottom: -6px
+    right: 0
+    &-btn
+        width: 34px
+        height: 34px
+        padding: 0
+        background-image: url("images/icons/arrowDownDark.png")
+        background-size: contain
+        border: none
+        &:focus,
+        &:hover,
+        &active
+            outline: none
+        span
+            display: none
+    &-btnPrev
+        margin-right: 2px
+        transform: rotate(90deg)
+    &-btnNext
+        transform: rotate(-90deg)
+
+    
+
+
++media-breakpoint-up($lg) 
+    .section-harrodsDelivering
+        padding-top: 100px
+        &__title
+            margin-bottom: 50px
+            &-h3
+                font-size: 28px
+                line-height: 42px
+        &__slider
+            margin-bottom: 40px
+        &__btn
+            .btnLink
+                width: initial
+
+
+    .harrodsDelivering-carousel
+        &__slide
+            flex-direction: row
+        &__logo
+            overflow: hidden
+            max-height: 700px
+            width: 50%
+            &-img
+        &__content
+            width: 50%
+            padding: 8% 5% 10% 5%
+            &-logo
+                margin-bottom: 50px
+            &-title
+                margin-bottom: 30px
+                font-size: 32px
+            &-desc
+                display: block
+                margin-bottom: 60px
+
+    .carouselNav
+        position: absolute
+        bottom: -6px
+        right: calc(50% - 70px*3)
+        &-btn
+            width: 70px
+            height: 70px
+    .carouselNav-btnPrev
+        margin-right: 4px
