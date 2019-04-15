@@ -58,7 +58,18 @@ $(document).ready(function(){
 		nav: true,
 		navContainerClass: "carouselNav",
 		navClass: ["carouselNav-btnPrev carouselNav-btn","carouselNav-btnNext carouselNav-btn"],
-	})
+	});
+
+	// otherArticlesCarousel
+
+	var otherArticlesCarousel = $("#otherArticlesCarousel");
+	otherArticlesCarousel.owlCarousel({
+		items: 1,
+		loop: true,
+		dotsEach: true,
+		dotsClass: "navDots",
+		dotClass: "navDots__dot",
+	});
 
 });
 

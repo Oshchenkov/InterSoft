@@ -1,0 +1,176 @@
+
+.section-otherArticles
+    padding-bottom: 60px
+    text-align: center
+    &__title
+        margin-bottom: 40px
+        &-h3
+            font-family: $BGPro-font
+            font-size: 24px
+            font-weight: bold
+            line-height: 32px
+            letter-spacing: -0.2px
+            color: $blackLight-color
+            margin-bottom: 0
+    &__mob-content
+    &__pc-content  
+    &__btn
+        .btnLink
+            width: 100%      
+
+.section-otherArticles__mob-content .separator
+    margin-bottom: 68px
+.otherArticles-carousel
+    &__slide
+        &-logo
+            margin-bottom: 25px
+            &Img
+                width: 100%
+                height: auto
+        &-logistics
+            margin-bottom: 10px
+            font-family: $BGPro-Bold-font
+            text-transform: uppercase
+            background-color: $yellow-color
+            color: $blackLight-color
+            display: inline-block
+            padding: 2px 30px
+            border: 1px solid $grey-color
+        &-date
+            color: $greyDark-color
+            font-family: $BGPro-Bold-font
+            font-size: 14px
+            text-transform: uppercase
+            letter-spacing: -0.2px
+            margin-bottom: 10px
+        &-subTitle
+            font-family: $BGPro-Bold-font
+            font-size: 22px
+            line-height: 30px
+            letter-spacing: -0.2px
+            color: $blackLight-color
+            margin-bottom: 15px
+        &-desc
+            font-family: $BGPro-Bold-font
+            font-size: 16px
+            line-height: 24px
+            color: $blackLight-color
+            margin-bottom: 15px
+        &-userBlock
+            display: flex
+            flex-direction: column
+        &-btn
+            margin-top: 20px
+            margin-bottom: 20px
+
+.userBlock
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__logo
+        margin-bottom: 5px
+        width: 32px
+        height: 32px
+        &-img
+            width: 100%
+            height: auto
+    &__name
+        font-family: $BGPro-Bold-font
+        color: $blackLight-color
+        font-size: 14px
+        line-height: 17px
+
+#otherArticlesCarousel .navDots
+    margin-bottom: -62px
+
+
++media-breakpoint-up($lg) 
+    .section-otherArticles__mob-content
+        display: none
+    .section-otherArticles__btn .btnLink
+        width: initial
+    .section-otherArticles
+        padding-bottom: 100px
+        padding-top: 40px
+        &__title
+            margin-bottom: 50px
+            &-h3
+                font-family: $BGPro-Bold-font
+                font-size: 28px
+                line-height: 42px
+                letter-spacing: -0.2px
+                color: $blackLight-color
+    
+    .section-otherArticles__pc-content
+        margin-bottom: 40px
+    
+    .otherArticlesPC
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    .otherArticlesPC-itemBlock
+        width: calc(100% / 3 - 24px - 24px);
+        margin: 0 12px
+        &:first-child
+            margin-left: 0
+        &:last-child
+            margin-right: 0
+    .otherArticlesPC
+        &__logo
+            margin-bottom: 25px
+            &-img
+                width: 100%
+                height: auto
+        &__logistics
+            margin-bottom: 10px
+            font-family: $BGPro-Bold-font
+            text-transform: uppercase
+            background-color: $yellow-color
+            color: $blackLight-color
+            display: inline-block
+            padding: 2px 30px
+            border: 1px solid $grey-color
+        &__date
+            color: $greyDark-color
+            font-family: $BGPro-Bold-font
+            font-size: 14px
+            text-transform: uppercase
+            letter-spacing: -0.2px
+            margin-bottom: 10px
+        &__subTitle
+            font-family: $BGPro-Bold-font
+            font-size: 26px
+            line-height: 34px
+            letter-spacing: -0.2px
+            color: $blackLight-color
+            margin-bottom: 20px
+            height: 68px
+            overflow: hidden
+            text-overflow: ellipsis
+        &__desc
+            font-family: $BGPro-font
+            font-size: 20px
+            line-height: 26px
+            color: $blackLight-color
+            // margin-bottom: 25px
+            height: 78px
+            overflow: hidden
+            text-overflow: ellipsis
+        &__userBlock
+            display: flex
+            flex-direction: column
+        &__btn
+            margin-top: 20px
+            margin-bottom: 20px
+
+.userBlock
+    &__logo
+        margin-bottom: 10px
+        width: 42px
+        height: 42px
+    &__name
+        font-family: $BGPro-Bold-font
+        color: $blackLight-color
+        font-size: 16px
+        line-height: 24px
