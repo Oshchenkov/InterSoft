@@ -1,0 +1,11 @@
+@import "section-deliveryChallenge-mob/_section-deliveryChallenge-mob"
+@import "section-deliveryChallenge-pc/_section-deliveryChallenge-pc"
+
+.section-deliveryChallenge
+    background-color: $blackLight-color
+
++media-breakpoint-up($lg) 
+    .section-deliveryChallenge-mob
+        display: none
+    .section-deliveryChallenge-pc
+        display: flex

@@ -1,6 +1,6 @@
 var gulpVersion   = '4'; // Gulp version: 3 or 4
 
-var gulp          = require('gulp'),
+var     gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
 		sass          = require('gulp-sass'),
 		browserSync   = require('browser-sync'),

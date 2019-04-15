@@ -1,0 +1,28 @@
+.btnNumber
+    width: 39px
+    height: 39px
+    display: flex
+    align-content: center
+    justify-content: center
+    flex-direction: column
+    background-color: $greyDark-color
+    border-radius: 50%
+    cursor: pointer
+    z-index: 88
+    &__span
+        width: 31px
+        height: 31px
+        background-color: $blackLight-color
+        border-radius: 50%
+        align-self: center
+        color: $greyDark-color
+        font-size: 25px
+        line-height: 31px
+        font-family: $BGPro-Bold-font
+        align-self: center
+        text-align: center
+
+.btnNumber.active
+    background-color: $yellow-color
+.btnNumber.active .btnNumber__span
+    color: $yellow-color
